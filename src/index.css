@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-inter: "Inter", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --color-primary: #0D6EFD;
+    --color-para-black: #1a1a1a;
+    --color-plain-bg-white: #f4f4f4;
+
+    /* --breakpoint-gt-mob: 600px; */
+    /* initial value works till 767 */
+
+    /* tab from 768 to 1023 */
+    --breakpoint-tab: 768px;
+
+    /* gt-tab min 1024 to 1200   */
+    --breakpoint-gt-tab: 1024px;
+    /* desktop min 1201 no max limit  */
+    --breakpoint-desktop: 1201px;
+}
+
+
+:root {
+    --inter-font: "Inter", sans-serif;
+    --montserrat-font: "Montserrat", sans-serif;
+    --poppins-font: "Poppins", sans-serif;
+    --primary-color: #0D6EFD;
+
+    --para-black-color: #1a1a1a;
+    --plain-bg-white-color: #f4f4f4;
+
+    --black-color: black;
+    --white-color: white;
+}
+
+
+
+html {
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background-color: #F4F4F4;
+    overflow-x: hidden;
+}
+
+
+button:disabled {
+  opacity: 0.6; /* Makes the button appear semi-transparent */
+  cursor: not-allowed; /* Changes the cursor to a "not allowed" symbol on hover */
+}
+
+
+/* body {
+    cursor: none !important;
+}
+
+body a:hover,
+body a:active,
+body button:hover,
+body button:active,
+body div:hover,
+body div:active,
+body p:hover,
+body p:active,
+body span:hover,
+body span:active {
+    cursor: none !important;
+} */
+
+
+/* .head_foot_cont_full {
+    background-color: brown !important;
+    width: 100%;
+} */
+
+.head_foot_cont {
+    /* background-color: yellowgreen !important; */
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> Information Pages Styles */
+
+
+.info_pages {
+    /* background-color: var(--primary-color); */
+    display: flex;
+    align-items: flex-start;
+    padding: 50px !important;
+}
+
+.info_pages h1 {
+    font-family: 'Montserrat';
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.info_pages h2 {
+    font-family: 'Montserrat';
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    padding-top: 10px;
+    /* background-color: red; */
+}
+
+.info_pages h2:first-of-type {
+    padding-top: 0 !important;
+    /* background-color: aqua; */
+}
+
+.info_pages p {
+    /* font-family: 'Inter'; */
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.info_pages p:last-child {
+    padding: 0;
+}
+
+.info_pages ul {
+    list-style-type: disc;
+    margin-left: 26px;
+    padding: 10px 0;
+}
+
+.info_pages ul ul {
+    list-style-type: circle;
+}
+
+.info_pages ul li {
+    padding: 5px 0;
+}
+
+.info_pages p:has(+ ul) {
+    padding-bottom: 0;
+    /* background-color: aqua; */
+}
+
+.info_pages a {
+    /* background-color: red; */
+    color: var(--primary-color);
+}
+
+.info_pages a:hover {
+    text-decoration: underline;
+}
+
+/* .info_pages p:last-child {
+    padding-bottom: 20px;
+} */
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> ENDS Information Pages Styles */
+
+
+
+@media (min-width: 1200px) {
+    .difLocation_icon_footer {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .difLocation_icon_footer {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    #newsletter_submit_btn {
+        width: 100%;
+    }
+}
+
+/* 1024 - 60
+1280 - 38 */
+
+/* 
+@media (min-width: 1441px) {
+    .head_foot_cont {
+    }
+} */
+
+/* footer.head_foot_cont_full {
+    padding: 30px 50px;
+} */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> LENIS Req CSS */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> ENDS LENIS Req CSS */
+
+
+@media (min-width: 769px) and (max-width: 1279px) {
+    .head_foot_cont#collapseMenu {
+        padding: 0;
+    }
+}
+
+
+
+/* .orderProcessLoader {
+    border: 1px solid #ffffff;
+    border-top: 3px solid #000000;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+} */
+
+.orderProcessLoader {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    /* border-bottom-color: var(--primary-clr); */
+    border-bottom-color: transparent;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
