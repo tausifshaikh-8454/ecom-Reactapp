@@ -166,7 +166,7 @@ const App = () => {
   return (
     <>
 
-      <Cursor />
+      {/* <Cursor /> */}
 
       <ProdProvider value={{ cartProducts, loadingCart, addToCartFunc, changeQuantityFunc, removeFromCartFunc }} >
 

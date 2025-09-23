@@ -20,14 +20,8 @@ const InputBar = ({
     // let combinedClass = `${class_name} ${additionalClassName}`
     return (
         <>
-            {/* <label htmlFor="country"> Country </label>
-            <input
-                type="text" readOnly name="" id="country" value="India"
-                className=' w-full border border-[#737373] outline-0 px-[16px] py-[12px] text-[18px]/[26px] rounded-[6px]  '
-                onClick={handlerCountryInp}
-            /> */}
-
-            {label_text && <label htmlFor={html_for} className='block mb-2 font-poppins text-[16px] font-medium text-black-1c  ' > {label_text} </label>}
+            
+            {label_text && <label htmlFor={html_for} className='block mb-2 font-poppins text-[18px] font-medium text-black-1c  ' > {label_text} </label>}
             <input
                 type={type} readOnly={read_only} name={name} id={id} value={value} placeholder={placeholder}
                 className={`${class_name} ${additionalClassName}`}
