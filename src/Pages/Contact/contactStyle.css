@@ -18,7 +18,7 @@
     background: white;
     position: absolute;
     top: -45px;
-    left: 160px;
+    left: 40%;
     border: 2px dashed #E5E7EB;
 }
 .group:hover>.iconStyle {
@@ -27,4 +27,16 @@
 
 .group:hover{
     box-shadow: -2px 4px 12px 1px #0000003d;
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1080px) {
+    .iconStyle {
+        left: 30%;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+    .iconStyle {
+        left: 30%;
+    }
 }

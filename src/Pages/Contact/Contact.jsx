@@ -174,9 +174,9 @@ const Contact = () => {
           {/* <ContactSpotlight /> */}
 
           {/* >>>>>>>>>>>>>>>>> Spotlight */}
-          <div className="relative contact-spotlight-bg h-[80vh] bg-cover bg-no-repeat bg-center-top flex flex-col justify-center px-4" style={{ backgroundImage: `url(${contact})` }}>
+          <div className="relative contact-spotlight-bg lg:h-[80vh] h-[50vh] bg-cover bg-no-repeat bg-center-top flex flex-col justify-center px-4" style={{ backgroundImage: `url(${contact})` }}>
             <div className="w-[100%] py-[20px] px-[50px] flex align-center justify-center"><BreadCrumbs /></div>
-            <h2 className="mb-4 text-[50px] lg:text-[90px] tracking-tight font-poppins font-[700] text-center text-white dark:text-white z-[99]">Contact Us</h2>
+            <h2 className="mb-4 text-[40px] lg:text-[90px] tracking-tight font-poppins font-[700] text-center text-white dark:text-white z-[99]">Contact Us</h2>
 
           </div>
 
@@ -184,41 +184,34 @@ const Contact = () => {
           <div className="container_layout mt-[50px] m-auto" >
             <div className="w-[100%] flex flex-col justify-center gap-[50px] lg:gap-[75px] md:my-20 mb-[20px] ">
 
-              <div className="w-[100%] md:w-[100%] flex flex-col md:flex-row gap-[20px] md:gap-[40px] ">
+              <div className="w-[100%] md:w-[100%] flex  gap-[70px] md:gap-[20px] lg:flex-row flex-wrap">
 
-                {/* <div className="w-[100%] md:w-[33%] border-dashed border-2 text-center border-[#E5E7EB] hover:border-[#0d6efd] hover:border-solid pt-[50px] pb-[30px] px-[20px] rounded-xl relative">
-                  <div className="w-fit iconStyle"><FaLocationDot className='w-[25px] h-[25px] hover:fill-[#0d6efd] 'fill='#E5E7EB' /></div>
-                  <h5 className="font-montserrat font-[500] text-[22px] pl-[10px]">Location Address</h5>
-                  <p className='font-poppins font-[400] text-[16px]'>Shop No. 2, near Cement Bridge, Baramulla, Jammu and Kashmir 193101</p>
-                </div> */}
-
-                <div className="group w-[100%] md:w-[33%] border-dashed border-2 text-center border-[#E5E7EB] hover:border-[#0d6efd] pt-[70px] pb-[30px] px-[20px] rounded-xl relative transition-all duration-300 ease-in-out">
+                <div className="group w-[100%] md:w-[46%] lg:w-[32%] border-dashed border-2 text-center border-[#E5E7EB] hover:border-[#0d6efd] pt-[70px] pb-[30px] px-[20px] rounded-xl relative transition-all duration-300 ease-in-out">
                   <div className="w-fit iconStyle transition-all duration-300 ease-in-out">
                     <FaLocationDot className="w-[25px] h-[25px] fill-[#E5E7EB] transition-all duration-300 ease-in-out group-hover:fill-[#0d6efd]" />
                   </div>
-                  <h5 className="font-montserrat font-[500] text-[20px] pl-[10px] pb-[10px] group-hover:text-[#0d6efd]">Location Address</h5>
+                  <h5 className="font-montserrat font-[500] text-[20px] pb-[10px] group-hover:text-[#0d6efd]">Location Address</h5>
                   <p className="font-poppins font-[400] text-[16px] group-hover:text-[#0d6efd]">
                     Shop No. 2, near Cement Bridge, Baramulla, Jammu and Kashmir 193101
                   </p>
                 </div>
 
 
-                <div className="w-[100%] md:w-[33%] border-solid border-2  border-gray-100 py-[10px] px-[20px] rounded-xl">
-                  <div className="flex flex-row items-center pb-[10px]">
-                    <FaPhone width='20px' height='20px' fill='blue' />
-                    <h5 className="font-montserrat font-[500] text-[22px] pl-[10px]">Connect over call</h5>
+                <div className="group w-[100%] md:w-[46%] lg:w-[32%] border-dashed border-2 text-center border-[#E5E7EB] hover:border-[#0d6efd] pt-[70px] pb-[30px] px-[20px] rounded-xl relative transition-all duration-300 ease-in-out">
+                  <div className="w-fit iconStyle transition-all duration-300 ease-in-out">  
+                    <FaPhone className="w-[25px] h-[25px] fill-[#E5E7EB] transition-all duration-300 ease-in-out group-hover:fill-[#0d6efd]" />
                   </div>
-                  <a className='font-poppins font-[400] text-[16px]' href="tel:+91 8454896170">+91 84548-96170</a>
+                  <h5 className="font-montserrat font-[500] text-[22px] group-hover:text-[#0d6efd]">Connect over call</h5>
+                  <a className='font-poppins font-[400] text-[16px] group-hover:text-[#0d6efd]' href="tel:+91 8454896170">+91 84548-96170</a>
                 </div>
 
-                <div className="w-[100%] md:w-[33%] border-solid border-2 border-gray-100 py-[10px] px-[20px] rounded-xl">
+                <div className="group w-[100%] md:w-[46%] lg:w-[32%] border-dashed border-2 text-center border-[#E5E7EB] hover:border-[#0d6efd] pt-[70px] pb-[30px] px-[20px] rounded-xl relative transition-all duration-300 ease-in-out">
 
-                  <div className="flex flex-row items-center pb-[10px]">
-                    <MdEmail width='20px' height='20px' fill='blue' />
-                    <h5 className="font-montserrat font-[500] text-[22px] pl-[10px]">Contact via mail</h5>
+                  <div className="w-fit iconStyle transition-all duration-300 ease-in-out">
+                    <MdEmail className="w-[25px] h-[25px] fill-[#E5E7EB] transition-all duration-300 ease-in-out group-hover:fill-[#0d6efd]" />
                   </div>
-
-                  <a className='font-poppins font-[400] text-[16px]' href="mailto:tausif8454@gmail.com">tausif8454@gmail.com</a>
+                  <h5 className="font-montserrat font-[500] text-[22px] group-hover:text-[#0d6efd]">Contact via mail</h5>
+                  <a className='font-poppins font-[400] text-[16px] group-hover:text-[#0d6efd]' href="mailto:tausif8454@gmail.com">tausif8454@gmail.com</a>
                 </div>
 
               </div>
@@ -226,11 +219,11 @@ const Contact = () => {
             </div>
 
 
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col lg:flex-row">
 
               <form
                 ref={formRef} onSubmit={handlerSubmitForm}
-                className="w=[100%] md:w-[55%] mb-20 space-y-5 md:pr-10 relative "
+                className="w=[100%] lg:w-[55%] mb-20 space-y-5 md:pr-10 relative "
               >
 
                 <div>
@@ -259,7 +252,7 @@ const Contact = () => {
                 </div>
 
                 <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block mb-2 font-poppins text-[18px] font-medium text-black-1c">Your Message</label>
+                  <label htmlFor="message" className="block mb-2 font-montserrat text-[16px] font-medium text-black-1c">Your Message</label>
                   <textarea
                     id="message" rows="8" name='message' value={cFormData.message} onChange={(e) => setcFormData({ ...cFormData, message: e.target.value })}
 
@@ -283,7 +276,7 @@ const Contact = () => {
 
               </form>
 
-              <iframe className="w-[100%] md:w-[45%] h-[500px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.8908350351486!2d74.34184322233432!3d34.20863162896153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x427a1554541875c5%3A0x767cf96bc9f82add!2sBeyond%20Basic%20Home!5e0!3m2!1sen!2sin!4v1750772833106!5m2!1sen!2sin" />
+              <iframe className="w-[100%] lg:w-[45%] h-[500px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d824.8908350351486!2d74.34184322233432!3d34.20863162896153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x427a1554541875c5%3A0x767cf96bc9f82add!2sBeyond%20Basic%20Home!5e0!3m2!1sen!2sin!4v1750772833106!5m2!1sen!2sin" />
             </div>
 
           </div>
