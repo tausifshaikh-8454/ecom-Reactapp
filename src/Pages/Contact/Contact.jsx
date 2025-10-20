@@ -7,10 +7,8 @@ import './contactStyle.css';
 import emailjs from '@emailjs/browser';
 import Button from '../../components/FormComp/Button';
 import InputBar from '../../components/FormComp/InputBar';
-
 import { useAnimation, useScroll } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-
 import ContactSpotlight from '../../components/ContactPage/Spotlight'
 import useDocumentTitle from '../../hooks/useDocumentTitle';
 
@@ -176,7 +174,7 @@ const Contact = () => {
           {/* >>>>>>>>>>>>>>>>> Spotlight */}
           <div className="relative contact-spotlight-bg lg:h-[80vh] h-[50vh] bg-cover bg-no-repeat bg-center-top flex flex-col justify-center px-4" style={{ backgroundImage: `url(${contact})` }}>
             <div className="w-[100%] py-[20px] px-[50px] flex align-center justify-center"><BreadCrumbs /></div>
-            <h2 className="mb-4 text-[40px] lg:text-[90px] tracking-tight font-poppins font-[700] text-center text-white dark:text-white z-[99]">Contact Us</h2>
+            <h2 className="mb-4 text-[40px] lg:text-[90px] tracking-tight font-primary font-[100] text-center text-white dark:text-white z-[99]">Contact Us</h2>
 
           </div>
 
@@ -190,8 +188,8 @@ const Contact = () => {
                   <div className="w-fit iconStyle transition-all duration-300 ease-in-out">
                     <FaLocationDot className="w-[25px] h-[25px] fill-[#E5E7EB] transition-all duration-300 ease-in-out group-hover:fill-[#0d6efd]" />
                   </div>
-                  <h5 className="font-montserrat font-[500] text-[20px] pb-[10px] group-hover:text-[#0d6efd]">Location Address</h5>
-                  <p className="font-poppins font-[400] text-[16px] group-hover:text-[#0d6efd]">
+                  <h5 className="font-primary font-[500] text-[20px] pb-[10px] group-hover:text-[#0d6efd]">Location Address</h5>
+                  <p className="font-body font-[400] text-[16px] group-hover:text-[#0d6efd]">
                     Shop No. 2, near Cement Bridge, Baramulla, Jammu and Kashmir 193101
                   </p>
                 </div>
@@ -201,8 +199,8 @@ const Contact = () => {
                   <div className="w-fit iconStyle transition-all duration-300 ease-in-out">  
                     <FaPhone className="w-[25px] h-[25px] fill-[#E5E7EB] transition-all duration-300 ease-in-out group-hover:fill-[#0d6efd]" />
                   </div>
-                  <h5 className="font-montserrat font-[500] text-[22px] group-hover:text-[#0d6efd]">Connect over call</h5>
-                  <a className='font-poppins font-[400] text-[16px] group-hover:text-[#0d6efd]' href="tel:+91 8454896170">+91 84548-96170</a>
+                  <h5 className="font-primary font-[500] text-[22px] group-hover:text-[#0d6efd]">Connect over call</h5>
+                  <a className='font-body font-[400] text-[16px] group-hover:text-[#0d6efd]' href="tel:+91 8454896170">+91 84548-96170</a>
                 </div>
 
                 <div className="group w-[100%] md:w-[46%] lg:w-[32%] border-dashed border-2 text-center border-[#E5E7EB] hover:border-[#0d6efd] pt-[70px] pb-[30px] px-[20px] rounded-xl relative transition-all duration-300 ease-in-out">
@@ -210,8 +208,8 @@ const Contact = () => {
                   <div className="w-fit iconStyle transition-all duration-300 ease-in-out">
                     <MdEmail className="w-[25px] h-[25px] fill-[#E5E7EB] transition-all duration-300 ease-in-out group-hover:fill-[#0d6efd]" />
                   </div>
-                  <h5 className="font-montserrat font-[500] text-[22px] group-hover:text-[#0d6efd]">Contact via mail</h5>
-                  <a className='font-poppins font-[400] text-[16px] group-hover:text-[#0d6efd]' href="mailto:tausif8454@gmail.com">tausif8454@gmail.com</a>
+                  <h5 className="font-primary font-[500] text-[22px] group-hover:text-[#0d6efd]">Contact via mail</h5>
+                  <a className='font-body font-[400] text-[16px] group-hover:text-[#0d6efd]' href="mailto:tausif8454@gmail.com">tausif8454@gmail.com</a>
                 </div>
 
               </div>
@@ -252,7 +250,7 @@ const Contact = () => {
                 </div>
 
                 <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block mb-2 font-montserrat text-[16px] font-medium text-black-1c">Your Message</label>
+                  <label htmlFor="message" className="block mb-2 font-primary text-[16px] font-medium text-black-1c">Your Message</label>
                   <textarea
                     id="message" rows="8" name='message' value={cFormData.message} onChange={(e) => setcFormData({ ...cFormData, message: e.target.value })}
 

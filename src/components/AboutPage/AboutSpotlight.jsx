@@ -9,7 +9,7 @@ const AboutSpotlight = () => {
 
         <div className="container_layout m-auto flex justify-center items-center flex-col  ">
           <BreadCrumbs/>
-          <h1 className="font-poppins font-bold tab:text-[90px]/[100px] text-[55px]/[65px]  uppercase text-white mt-[10px] relative z-[99] " >About Us</h1>
+          <h1 className="font-primary tab:text-[120px]/[130px] text-[65px]/[70px] font-[100] text-white mt-[10px] relative z-[99] " >About Us</h1>
         </div>
 
       </div>

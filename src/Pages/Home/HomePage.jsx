@@ -7,7 +7,7 @@ import InformationComp from '../../components/HomePage/InformationComp/Informati
 import NewsLetter from '../../components/HomePage/NewsLetter/NewsLetter'
 import ProductSlider from '../../components/ProductSlider/ProductSlider'
 import FeatProductSlider from '../../components/FeatProductSlider/FeatProductSlider'
-import BlogSlider from '../../components/BlogSlider/BlogSlider'
+import BlogSlider from '../../components/BlogCards/BlogSlider'
 import Testimonials from '../../components/HomePage/Testimonials/Testimonials'
 import InstaFeed from '../../components/HomePage/InstagramSec/InstaFeed'
 import useDocumentTitle from '../../hooks/useDocumentTitle'

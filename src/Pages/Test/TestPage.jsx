@@ -6,66 +6,70 @@ import IPhoneLookTwo from './IPhoneLookTwo';
 import SingleIPhoneLook from './SingleIPhoneLook';
 import WatchCanvas from './WatchCanvas';
 import MainCanvas from './MainCanvas';
+import { Tabs } from "radix-ui";
+import "./testPage.css"
 
 
 const TestPage = () => {
 
     return (
-        <div className="bg-amber-200 " >
+        <Tabs.Root
+                    className="TabsRoot prods_info_tabs  "
+                    defaultValue="product-desc" >
 
-            <div className="cont flex p-[50px] min-h-[550px] " >
-                <div className="w-[50%] bg-cyan-200 ">
-                    <p>Using Single Canvas to for multiple Elements</p>
-                </div>
-                <div className="w-[50%] bg-blue-300 " >
-                    <MainCanvas />
-                </div>
-            </div>
+                    <Tabs.List
+                        className="TabsList w-full  "
+                        aria-label="Manage your account">
 
-            <div className="cont flex p-[50px] min-h-[550px] " >
-                <div className="w-[50%] bg-cyan-200 ">
-                    Can be control by users
-                </div>
-                <div className="w-[50%] bg-blue-300 " >
-                    <WatchCanvas />
+                        <Tabs.Trigger className="TabsTrigger w-[33%] py-[15px] font-primary text-[22px]/[28px] font-[500] text-black cursor-pointer  " value="product-desc" >
+                            About the Product
+                        </Tabs.Trigger>
 
-                </div>
-            </div>
+                        <Tabs.Trigger className="TabsTrigger w-[33%] py-[15px] font-primary text-[22px]/[28px] font-[500] text-black cursor-pointer " value="specifications" >
+                            Specifications
+                        </Tabs.Trigger>
 
+                        <Tabs.Trigger className="TabsTrigger w-[33%] py-[15px] font-primary text-[22px]/[28px] font-[500] text-black cursor-pointer " value="compatibility" >
+                            Compatibility
+                        </Tabs.Trigger>
 
-            {/* <TestComp additionalclassName="class3 class4" />
-            <ThreeScene /> */}
+                    </Tabs.List>
 
-            {/* <div className="cont flex p-[50px] min-h-[550px] " >
-                <div className="w-[50%] bg-amber-500 ">
-                    Left
-                </div>
-                <div className="w-[50%] bg-pink-400 " >
-                    <IPhoneLook />
+                    <Tabs.Content className="TabsContent px-[15px] pt-[30px] " value="product-desc">
+                        <p className="Text">
+                            Make changes to your account here. Click save when you're done.
+                        </p>
 
+                        {/* <p
+                            className='Text text-black font-body tab:text-[18px]/[28px] text-[16px]/[26px] font-[300] dang-cont'
+                            dangerouslySetInnerHTML={{ __html: prod_description }}
+                        /> */}
 
-                </div>
-            </div> */}
+                    </Tabs.Content>
 
-            <div className="cont flex p-[50px] min-h-[550px] " >
-                <div className="w-[50%] bg-amber-500 ">
-                    Left
-                </div>
-                <div className="w-[50%] bg-pink-400 " >
-                    <SingleIPhoneLook />
-                </div>
-            </div>
+                    <Tabs.Content className="TabsContent px-[15px] pt-[30px] " value="specifications">
+                        <p className="Text">
+                            Change your password here. After saving, you'll be logged out.
+                        </p>
 
-            <div className="py-[40px] bg-plain-bg-white " >
-                <div className="py-[20px] bg-primary flex flex-col gap-8 text-center  ">
-                <h2 className='font-inter ' >This is a Heading</h2>
-                <p className='font-montserrat text-para-black ' >This is a Paragraph</p>
-                </div>
-            </div>
+                        {/* <p
+                            className='Text text-black font-body tab:text-[18px]/[28px] text-[16px]/[26px] font-[300] dang-cont'
+                            dangerouslySetInnerHTML={{ __html: prod_specifications }}
+                        /> */}
+                    </Tabs.Content>
 
+                    <Tabs.Content className="TabsContent px-[15px] pt-[30px] " value="compatibility" >
+                        <p className="Text">
+                            Change your password here. After saving, you'll be logged out. compatibility
+                        </p>
 
+                        {/* <p
+                            className='Text text-black font-body tab:text-[18px]/[28px] text-[16px]/[26px] font-[300] dang-cont'
+                            dangerouslySetInnerHTML={{ __html: prod_compatibility }}
+                        /> */}
+                    </Tabs.Content>
 
-        </div>
+        </Tabs.Root>
     )
 }
 

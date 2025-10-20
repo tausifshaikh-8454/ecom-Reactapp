@@ -188,6 +188,8 @@ const App = () => {
 
               <Route path='/blogs' element={<BlogPage />} />
 
+              <Route path='/blogs/:slug' element={<BlogPage />} />
+
               <Route path='/products' element={<Products />} />
 
               <Route path='/products/:slug' element={<ProductDetail />} />
