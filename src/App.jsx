@@ -25,6 +25,7 @@ import ShippingPolicy from './Pages/ShippingPolicy/ShippingPolicy';
 import SuccessPage from './Pages/SuccessPage/SuccessPage';
 import CancelPage from './Pages/CancelPage/CancelPage';
 import Cursor from './components/Cursor/Cursor';
+import BlogDetails from './Pages/BlogsDetails/BlogDetails';
 
 
 const App = () => {
@@ -188,7 +189,7 @@ const App = () => {
 
               <Route path='/blogs' element={<BlogPage />} />
 
-              <Route path='/blogs/:slug' element={<BlogPage />} />
+              <Route path='/blogs/:slug' element={<BlogDetails/>} />
 
               <Route path='/products' element={<Products />} />
 

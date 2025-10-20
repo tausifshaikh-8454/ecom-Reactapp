@@ -1,7 +1,7 @@
 import React from 'react'
-import useFetch from '../../hooks/useFetch';
-import Loader from '../Loader/SkeletonLoader';
-import BlogCard from '../../components/BlogCards/BlogCard'
+import useFetch from '../../../hooks/useFetch';
+import Loader from '../../Loader/SkeletonLoader';
+import BlogCard from './BlogCard'
 
 const BlogCardListing = () => {
 
@@ -21,6 +21,7 @@ const BlogCardListing = () => {
             loader ? <Loader/> : error ? (<p>Error in fecthing Data something went wrong</p>) : 
             blogData.map((elem)=>
                 <BlogCard 
+                key={elem.blog_id}           
                 id = {elem.blog_id}
                 slug = {elem.blog_slug}
                 name = {elem.blog_title}

@@ -7,9 +7,9 @@ import InformationComp from '../../components/HomePage/InformationComp/Informati
 import NewsLetter from '../../components/HomePage/NewsLetter/NewsLetter'
 import ProductSlider from '../../components/ProductSlider/ProductSlider'
 import FeatProductSlider from '../../components/FeatProductSlider/FeatProductSlider'
-import BlogSlider from '../../components/BlogCards/BlogSlider'
-import Testimonials from '../../components/HomePage/Testimonials/Testimonials'
-import InstaFeed from '../../components/HomePage/InstagramSec/InstaFeed'
+// import BlogSlider from '../../components/BlogCards/BlogSlider'
+// import Testimonials from '../../components/HomePage/Testimonials/Testimonials'
+// import InstaFeed from '../../components/HomePage/InstagramSec/InstaFeed'
 import useDocumentTitle from '../../hooks/useDocumentTitle'
 
 const Home = () => {
@@ -43,8 +43,8 @@ const Home = () => {
 
             {/* >>>>>>>>>>>>>> In Cont */}
             <div className="container_layout mx-auto flex justify-center items-center flex-col  "  >
-                <BlogSlider />
-                <Testimonials />
+                {/* <BlogSlider />
+                <Testimonials /> */}
             </div>
 
             {/* >>>>>>>>>>>>>> Full Width Newsletter */}
@@ -52,7 +52,7 @@ const Home = () => {
 
             {/* >>>>>>>>>>>>>> In Cont */}
             <div className="container_layout mx-auto flex justify-center items-center flex-col  "  >
-                <InstaFeed />
+                {/* <InstaFeed /> */}
             </div>
 
         </>

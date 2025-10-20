@@ -1,7 +1,7 @@
 import React from 'react'
-import placeholderImg from '../../assets/placeholder_img.png'
+import placeholderImg from '../../../assets/placeholder_img.png'
 import { Link, Links } from 'react-router-dom'
-import Button from '../FormComp/Button'
+import Button from '../../FormComp/Button'
 import './Blogcard.css'
 import { BsArrowRight } from 'react-icons/bs'
 
@@ -36,7 +36,7 @@ const BlogCard = ({
                     <p className={`font-[outfit] text-[14px]/[20px] w-fit bg-[#E3F0FF] py-[10px] px-[10px]`}>{blogTags}</p>
                     <h4 className={`font-[outfit] text-[20px]/[28px] py-[10px]`}>{name}</h4>
                     {/* <h3 className='font-[outfit] text-[16px]/[24px] pb-[20px]' >{blogCat}</h3> */}
-                    <Link to={`/blogs/${urlToblog}`} ><div className={`flex flex-row gap-[10px] item-center content-center`}><p className={`font-[outfit] text-[16px]/[20px]`}>Learn more</p></div></Link>
+                    <Link className='w-fit' to={`/blogs/${urlToblog}`} ><div className={`cta flex flex-row gap-[10px] item-center content-center`}><p className={`font-[outfit] text-[16px]/[20px]`}>Learn more</p><BsArrowRight className='mt-[05px]'/></div></Link>
                 </div>
             </div>
         

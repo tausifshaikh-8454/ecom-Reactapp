@@ -1,7 +1,7 @@
 import React from 'react'
 import { Tabs } from "radix-ui";
-import BlogCard from "../BlogCards/BlogCard"
-import BlogCardListing from '../BlogCards/BlogCardListing';
+import BlogCard from "./BlogCards/BlogCard"
+import BlogCardListing from './BlogCards/BlogCardListing';
 
 
 
