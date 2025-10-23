@@ -24,7 +24,7 @@ const BlogCard = ({
 
         
             <div className = {`blog-card ${boxWidth} relative flex flex-row gap-[20px] border-1 border-[#DDDDDD] h-[300px] rounded-[10px] pr-[10px]`}>
-                <div className="w-[45%] overflow-hidden">
+                <div className="w-[50%] overflow-hidden">
                     <img
                     // src="https://www.tintaccessories.com/wp-content/uploads/2024/01/MagPop-JPEG-1024x1024.jpg"
                     src={featImg}
@@ -33,10 +33,10 @@ const BlogCard = ({
                 />
                 </div>
                 <div className="texts flex flex-col align-middle justify-center w-[50%]">
-                    <p className={`font-[outfit] text-[14px]/[20px] w-fit bg-[#E3F0FF] py-[10px] px-[10px]`}>{blogTags}</p>
+                    <p className={`font-[outfit] text-[14px]/[20px] w-fit bg-[#0d6efdb5] py-[10px] px-[10px] rounded-[6px] text-white`}>{blogTags}</p>
                     <h4 className={`font-[outfit] text-[20px]/[28px] py-[10px]`}>{name}</h4>
                     {/* <h3 className='font-[outfit] text-[16px]/[24px] pb-[20px]' >{blogCat}</h3> */}
-                    <Link className='w-fit' to={`/blogs/${urlToblog}`} ><div className={`cta flex flex-row gap-[10px] item-center content-center`}><p className={`font-[outfit] text-[16px]/[20px]`}>Learn more</p><BsArrowRight className='mt-[05px]'/></div></Link>
+                    <Link className='w-fit' to={`/blogs/${urlToblog}`} ><div className={`cta flex flex-row gap-[10px] item-center content-center`}><p className={`font-[outfit] text-[16px]/[20px]`}>Learn more</p><BsArrowRight className='mt-[05px] '/></div></Link>
                 </div>
             </div>
         

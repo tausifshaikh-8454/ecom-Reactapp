@@ -1,0 +1,16 @@
+.blogDesc h2{
+    font-family: 'outfit', 'sans-serif';
+    font-size: 28px;
+    color: #000000;
+    line-height: 34px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.blogDesc p{
+    font-family: 'poppins', 'sans-serif';
+    font-size: 16px;
+    color: #000000;
+    line-height: 30px;
+    font-weight: 400;
+    
+}

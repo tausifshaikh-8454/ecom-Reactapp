@@ -7,10 +7,21 @@
     transform: scale(1.1);
     transition: ease-in .3s ;
 }
+
+.blog-card:hover .cta{
+    opacity: 1;
+    transition: ease 1s ;
+}
+
 .cta{
     width: fit-content;
+    opacity: 0;
 }
 .cta:hover svg{
     transform: rotate(-45deg);
     transition: ease-in .2s ;
+    color: #0D74FC
+}
+.cta:hover p{
+    color: #0D74FC;
 }

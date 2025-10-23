@@ -54,10 +54,10 @@ const Blogs = () => {
 
 
     return (
-        <div>
+        <div >
             {/* >>>>>>>>>>>>>> Full Width Spotlight */}
             <MainSpot/>
-            <BlogTabs/>
+            <BlogTabs />
         </div>
     )
 }

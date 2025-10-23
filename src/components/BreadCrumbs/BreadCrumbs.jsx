@@ -2,7 +2,9 @@ import React from 'react'
 import { useLocation, Link } from 'react-router-dom'
 import './BreadStyle.css'
 
-const BreadCrumbs = () => {
+const BreadCrumbs = ({
+    anColor = "text-[#000000]"
+}) => {
     const location = useLocation();
     let currentLink = '';
     let routeName = location.pathname.split('/').filter(rName => rName !== '');
@@ -17,7 +19,7 @@ const BreadCrumbs = () => {
 
     return <nav className='relative z-[999] ' >
         <span className='breadCrumbs text-amber-800 ' key='home' >
-            <Link to='/'  >Home</Link>
+            <Link className =  {{anColor}} to='/'  >Home</Link>
         </span>
         {crumbs}
     </nav>
